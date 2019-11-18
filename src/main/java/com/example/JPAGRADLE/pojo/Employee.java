@@ -15,7 +15,7 @@ public class Employee {
 	private String name;
 	@Column(name = "email", nullable = false)
 	private String email;
-	@Column(name = "Desg", nullable = false)
+	@Column(name = "designation", nullable = false)
 	private String designation;
 
 	public int getId() {
@@ -48,5 +48,10 @@ public class Employee {
 
 	public void setDesignation(String designation) {
 		this.designation = designation;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", email=" + email + ", designation=" + designation + "]";
 	}
 }
